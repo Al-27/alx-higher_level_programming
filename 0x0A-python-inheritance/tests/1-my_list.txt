@@ -1,0 +1,25 @@
+The ``my_list`` module
+======================
+
+Using ``Class``
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+``factorial`` from the ``example`` module:
+
+    >>> from 1-my_list import MyList
+
+Now use it:
+
+    >>> list = MyList()
+    >>> list.append(9)
+    >>> list.append(2)
+    >>> list.append(3)
+    >>> list.append(83)
+    >>> list.append(0)
+    >>> list.print_sorted()
+    [0, 2, 3, 9, 83]
+    
+    >>> list.clear()
+    >>> list.print_sorted()
+    []
