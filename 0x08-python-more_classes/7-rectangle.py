@@ -58,7 +58,7 @@ class Rectangle:
                         newline =  "\n" 
                     else: 
                        newline =   ""
-                    ret += symbol*w + (newline)
+                    ret += (symbol*w) + (newline)
         return ret
     
     def __repr__(self):
