@@ -48,7 +48,7 @@ class Rectangle:
     
     def __str__(self):
         w, h = self.__width ,self.__height
-        symbol = Rectangle.print_symbol
+        symbol = self.print_symbol
         ret = ""
         if self.__width == 0 or self.__height == 0:
             return ret
