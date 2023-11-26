@@ -54,7 +54,10 @@ class Rectangle:
             return ret
         else:
             for i in range(h):
-                    newline =  "\n" if i+1 < h else ""
+                    if i+1 < h :
+                        newline =  "\n" 
+                    else: 
+                       newline =   ""
                     ret += symbol*w + (newline)
         return ret
     
