@@ -54,11 +54,8 @@ class Rectangle:
             return ret
         else:
             for i in range(h):
-                    if i+1 < h :
-                        newline =  "\n" 
-                    else: 
-                       newline =   ""
-                    ret += (symbol*w) + (newline)
+                    ret += str(symbol)*w + ( "\n" if i+1 < h else "") 
+                        
         return ret
     
     def __repr__(self):
