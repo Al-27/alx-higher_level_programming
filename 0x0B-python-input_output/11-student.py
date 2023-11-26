@@ -26,3 +26,7 @@ class Student:
             newDict.pop(key)
             
         return newDict
+    
+    def reload_from_json(self, json):
+        for key,val in json.items():
+            self.__dict__[key] = val
