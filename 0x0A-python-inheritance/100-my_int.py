@@ -15,4 +15,4 @@ class MyInt(int):
         return not (int(self) == other)
     
     def __ne__(self, i):
-        return (int(self) == other)
+        return (int(self) == i)
