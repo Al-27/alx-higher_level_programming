@@ -3,8 +3,8 @@
 class Rectangle:
     """Rectangle"""
     def __init__(self, w=0, h=0):
-        self.__width = self.width  = w
-        self.__height = self.height = h
+        self.__width = self.width(w)
+        self.__height = self.height ( h)
     
     def width(self, value=None):
         if value == None:
@@ -21,8 +21,9 @@ class Rectangle:
         if value == None:
             return self.__height
         
-        if isinstance(value,int) :
-            self.__height = value
+        if isinstance(value,int):
+            self.__height = value 
+            return value
         elif value < 0 :
             raise ValueError("height must >= 0")
         else:
