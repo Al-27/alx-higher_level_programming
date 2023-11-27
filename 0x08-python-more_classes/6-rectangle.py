@@ -35,7 +35,7 @@ class Rectangle:
     height = property(height, height)
 
     def check_valid(self, w=None, h=None):
-        mustbe = " must >= 0"
+        mustbe = " must be >= 0"
         mustbe2 = " must be an integer"
         
         if w != None:
