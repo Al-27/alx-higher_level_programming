@@ -34,13 +34,12 @@ class Rectangle:
             if isinstance(w,int) : 
                 if w < 0 :
                     raise ValueError("width" + mustbe)
-                return True               
             else:
                 raise TypeError("width" + mustbe2)                
         if h != None:
             if isinstance(h,int):
                 if h < 0 :
                     raise ValueError("height" + mustbe)
-                return True
             else:
                 raise TypeError("height" + mustbe2)
+        return True
