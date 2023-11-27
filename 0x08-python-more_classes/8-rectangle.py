@@ -86,4 +86,4 @@ class Rectangle:
         if not isinstance(rect_2, Rectangle):
             raise TypeError(f"rect_2 {errmsg}")
 
-        return rect_1 if rect_1 >= rect_2 else rect_2
+        return rect_1 if rect_1.area() >= rect_2.area() else rect_2
