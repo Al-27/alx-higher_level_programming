@@ -3,8 +3,8 @@
 class Rectangle:
     """Rectangle"""
     def __init__(self, w=0, h=0):
-        self.width = w
-        self.height = h
+        self.__width = self.width  = w
+        self.__height = self.height = h
         
     def __del__(self):
         print("Bye rectangle...")

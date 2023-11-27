@@ -6,8 +6,8 @@ class Rectangle:
     number_of_instances = 0
     
     def __init__(self, w=0, h=0):
-        self.width = w
-        self.height = h
+        self.__width = self.width  = w
+        self.__height = self.height = h
         Rectangle.number_of_instances += 1
         
     def __del__(self):
