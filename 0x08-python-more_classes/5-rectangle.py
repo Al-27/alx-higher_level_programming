@@ -10,6 +10,9 @@ class Rectangle:
         self.__width = w
         self.__height = h
 
+    def __del__(self):
+        print("Bye rectangle...")
+    
     def width(self, value=None):
         if value is None:
             return self.__width
