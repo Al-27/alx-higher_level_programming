@@ -29,17 +29,18 @@ class Rectangle:
     def check_valid(self, w=None, h=None):
         mustbe = " must >= 0"
         mustbe2 = " must be an integer"
+        
         if w != None:
-            if isinstance(w,int) :
-                return True
-            elif w < 0 :
-                raise ValueError("width" + mustbe)
+            if isinstance(w,int) : 
+                if w < 0 :
+                    raise ValueError("width" + mustbe)
+                return True               
             else:
-                raise TypeError("width" + mustbe2)
+                raise TypeError("width" + mustbe2)                
         if h != None:
             if isinstance(h,int):
+                if h < 0 :
+                    raise ValueError("height" + mustbe)
                 return True
-            elif h < 0 :
-                raise ValueError("height" + mustbe)
             else:
                 raise TypeError("height" + mustbe2)
