@@ -1,0 +1,2 @@
+-- DESC
+SHOW DATABASES;
