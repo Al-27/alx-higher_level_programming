@@ -1,2 +1,2 @@
 --DESC
-UPDATE second_table SET score = 10 WHERE name = "Bob"
+UPDATE second_table SET second_table.score = 10 WHERE name = "Bob";
