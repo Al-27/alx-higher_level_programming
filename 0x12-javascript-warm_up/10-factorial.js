@@ -13,8 +13,8 @@ else
 
 function fact(a)
 {
-    let sum = 0;
-    if( a > 1 ) sum += fact( a-1 );
+    let sum = 1;
+    if( a > 1 ) sum *= fact( a-1 );
     
-    return a + sum ;
+    return a * sum ;
 }
