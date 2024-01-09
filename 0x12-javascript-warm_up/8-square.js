@@ -2,7 +2,7 @@
 //const { argv } = require('process');
 
 
-if( process.argv[2] === undefined || isNaN(size) ) console.log( 'Missing size' );
+if( process.argv[2] === undefined || isNaN(process.argv[2]) ) console.log( 'Missing size' );
 else
 {
 let size = parseInt( process.argv[2] );
