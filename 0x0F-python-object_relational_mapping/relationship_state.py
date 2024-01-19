@@ -7,6 +7,7 @@ Base = declarative_base()
 
 class State(Base):
     """
+    this is a doc
     """
     __tablename__ = "states"
     id = Column(Integer, primary_key=True)
