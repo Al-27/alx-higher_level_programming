@@ -10,7 +10,7 @@ if __name__ == '__main__':
     pwd = argv[2]
     db = argv[3]
     search = argv[4]
-    query = f"SELECT id, name FROM states WHERE name='{search}' ORDER by id ASC;"
+    query = "SELECT id, name FROM states WHERE name='{}' ORDER by id ASC;".format(search)
     
     connection = sql.connect("localhost", user, pwd, db, port=3306)
     cursor = connection.cursor()
