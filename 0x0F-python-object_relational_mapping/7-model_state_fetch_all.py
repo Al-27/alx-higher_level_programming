@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+this is a doc
+"""
 import sys
 from sqlalchemy import *
 from sqlalchemy.orm import sessionmaker

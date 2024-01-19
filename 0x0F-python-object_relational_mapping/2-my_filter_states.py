@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+this is a doc
+"""
 from sys import argv
 import MySQLdb as sql
 
