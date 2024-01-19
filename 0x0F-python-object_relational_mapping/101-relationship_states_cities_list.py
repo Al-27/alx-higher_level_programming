@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+"""
+"""
 import sys
 from sqlalchemy import *
 from sqlalchemy.orm import sessionmaker
