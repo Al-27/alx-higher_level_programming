@@ -1,3 +1,3 @@
 #!/bin/bash
 # comment
-curl -s --json @$2 $1
+curl -s --data @$2 --header "Content-Type: application/json" $1
