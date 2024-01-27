@@ -2,12 +2,17 @@
 """
 ---
 hippity hoppity, this is a doc
---
+--DOCS
 """
 import requests
 import sys.argv
 
 if __name__ == "__main__":
+    """
+    ---
+    hippity hoppity, this is a doc
+    --DOCS
+    """
     headers = {"Accept": "application/vnd.github+json"}
     resp = requests.get(
         f"https://api.github.com/repos/{argv[2]}/{argv[1]}/commits?per_page=10",
