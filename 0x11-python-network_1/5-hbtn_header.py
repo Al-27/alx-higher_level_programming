@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 """
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  
+hippity hoppity, this is a doc
 """
 from sys import argv
-import urllib.request as request
+import requests
 
-with request.urlopen(f'{argv[1]}') as response:
-    print( response.headers["X-Request-Id"] )
+if __name__ == "__main__":
+    with requests.get(f'{argv[1]}') as response:
+        print( response.headers["X-Request-Id"] )

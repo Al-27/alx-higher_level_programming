@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 """
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  
+hippity hoppity, this is a doc
 """
-import urllib.request as request
+import requests 
 
-with request.urlopen('https://alx-intranet.hbtn.io/status') as response:
-    content = response.read()
+if __name__ == "__main__":
+    resp = requests.get('https://alx-intranet.hbtn.io/status') 
     print(f"""Body response:$
-    - type: {type(content.decode())}$
-    - utf8 content: {content.decode()}$""")
+    - type: {type(resp.content)}$
+    - utf8 content: {resp.text}$""")

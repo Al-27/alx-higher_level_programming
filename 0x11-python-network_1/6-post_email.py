@@ -1,16 +1,12 @@
 #!/usr/bin/python3
 """
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  
+hippity hoppity, this is a doc
 """
 from sys import argv
-import urllib.request as request
-import urllib.parse as prs
+import requests
 
-email = {"email" : argv[2]}
-post = request.Request(argv[1], prs.urlencode(email).encode("utf-8"))
+if __name__ == "__main__":
+    email = {"email" : argv[2]}
+    post = requests.post(argv[1], data=email)
 
-
-with request.urlopen(post) as response:
-    print( response.read().decode() )
+    print(post.text)

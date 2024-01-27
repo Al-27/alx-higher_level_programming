@@ -1,16 +1,15 @@
 #!/usr/bin/python3
 """
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  
+hippity hoppity, this is a doc
 """
 from sys import argv
-import urllib.request as request
-import urllib.parse as prs
-import urllib.error
+import requests
 
-try:
-    with request.urlopen(argv[1]) as response:
-        print( response.read().decode() )
-except urllib.error.HTTPError as er :
-    print(f"Error code: {er.code}")
+
+if __name__ == "__main__":
+    response = requests.get(argv[1]) 
+    
+    if response.status_code == 200:
+        print( response.text )
+    else :
+        print(f"Error code: {response.status_code}")
