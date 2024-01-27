@@ -1,7 +1,13 @@
 #!/usr/bin/python3
 """
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  
+hippity hoppity, this is a doc
 """
-from urllib import *
+import requests
+
+
+if __name__ == "__main__":
+    headers = {"Accept": "application/vnd.github+json"}
+    resp = requests.get(
+        "https://api.github.com/repos/rails/rails/commits?per_page=10", headers=headers)
+    for js in resp.json():
+        print(f'{js["sha"]}: {js["commit"]["author"]["name"]}')
