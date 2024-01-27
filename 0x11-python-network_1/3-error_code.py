@@ -10,6 +10,6 @@ import urllib.error
 if __name__ == "__main__":
     try:
         with request.urlopen(argv[1]) as response:
-            print( response.read().decode() )
-    except urllib.error.HTTPError as er :
+            print(response.read().decode())
+    except urllib.error.HTTPError as er:
         print(f"Error code: {er.code}")
