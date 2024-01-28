@@ -1,6 +1,5 @@
 #!/usr/bin/node
-//const list = require("./100-data").dict;
-let list = [1,8,3,9,99,9];
+const list = require("./100-data").list;
 
 let map = list.map(x => {
     let index = list.indexOf(x);
